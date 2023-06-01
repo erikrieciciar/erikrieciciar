@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA Nobu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+    body,html{
+        margin: 0;
+        scroll-behavior: smooth;
+    }
+    /* první řádek */
+    .two-column{
+        display:flex;
+        flex-direction:row;
+        /*background-image: url("back_1.png");*/
+        background-image: url("fot/back_1.png");
+    }
+    .two-column div{
+        flex:1;
+        /*border:1px solid blue;*/
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        
+    }
+    @media only screen and (max-width: 800px) {
+    .two-column{
+        flex-direction:column-reverse;
+    }
+    .l1{
+        margin-top: 15%;
+    }
+    .l2{
+        margin-bottom: 10%;
+    }
+    }
+    /* druhý řádek */
+    .two-column-2{
+        display:flex;
+        flex-direction:row;
+    }
+    .two-column-2 div{
+        flex:1;
+        /*border:1px solid blue;*/
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        
+    }
+    @media only screen and (max-width: 800px) {
+    .two-column-2{
+        flex-direction:column;
+    }
+    }
+    /* třetí řádek */
+    .two-column-3{
+        display:flex;
+        flex-direction:row;
+        background-image: url("fot/back_2.png");
+    }
+    .two-column-3 div{
+        flex:1;
+        /*border:1px solid blue;*/
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        padding-top: 12%;
+        padding-bottom: 7%;
+        
+    }
+    @media only screen and (max-width: 800px) {
+    .two-column-3{
+        flex-direction:column-reverse;
+    }
+    }
+    /* pátý řádek */
+    .two-column-5{
+        display:flex;
+        flex-direction:row;
+        background-image: url("fot/back_3.png");
+    }
+    .two-column-5 div{
+        flex:1;
+        /*border:1px solid blue;*/
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        padding-top: 16%;
+        padding-bottom: 11%;
+        
+    }
+    @media only screen and (max-width: 800px) {
+    .two-column-5{
+        flex-direction:column;
+    }
+    }
+    /* osmý řádek */
+    .two-column-8{
+        display:flex;
+        flex-direction:row;
+        background-image: url("fot/back_4.png");
+    }
+    .two-column-8 div{
+        flex:1;
+        /*border:1px solid blue;*/
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        padding-top: 16%;
+        padding-bottom: 11%;
+        
+    }
+    @media only screen and (max-width: 800px) {
+    .two-column-8{
+        flex-direction:column;
+    }
+    }
+
+
+    /* prvni rada vlevo */
+    .l1{
+        padding: 10% 0 14% 0;
+    }
+    /* logo */
+    h1{   
+        font-size: 8em;
+        font-family: newake;
+        font-weight: 400;
+        margin-bottom: 0;
+        color: white;
+        font-style: bold;
+        display: block;  
+        padding-top: 6%;
+    }
+    p{
+        width: 70%;
+        font-family: Roboto;
+        font-size: 1.2em;
+        color: white;
+        font-family: Space Grotesk;
+    }
+    h1, p{
+        padding-left: 15%;
+    }
+    .button{
+        color: white;
+        text-decoration: none;
+        border: solid 2px white;
+        padding: 1.5% 3.5% 1.5% 3.5%;
+        margin-left: 15%;
+        font-family: Roboto;
+        font-size: 1.1em;
+        font-family: Space Grotesk;
+    }
+    .last-p{
+        margin-bottom: 6.5%;
+    }
+    .r2{
+        padding-top: 0%;
+        background-color: transparent;
+        margin-top: -5%;
+
+    }
+    .text-2{
+        margin-left: 14%;
+    }
+    .l2{
+        padding-top: 0%;
+        background-color: transparent;
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        width: 100%;
+        height: 20%;
+        background-color: transparent;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        position:absolute;
+        margin-top: -2%;
+    }
+    a{
+        text-decoration: none;
+        padding: 0 0 2% 0;
+        color: white;
+        font-family: Roboto;
+        font-family: Space Grotesk;
+    }
+    a:hover{
+        color:#94ccf4;
+    }
+    .logo{
+        width: 120px;
+        margin-top: 1%;
+    }
+    nav li{
+        list-style: none;
+        margin-top: 1%;
+    }
+    .r1{
+        padding-top: 6%;
+    }
+    .two-column .l2{
+        display: flex;
+        align-items: flex-start;
+    }
+    .lr3{
+        padding-bottom: 12%;
+    }
+    .pol-larger, .pol-larger-1{
+        margin-top: 8%;
+    }
+    @media only screen and (max-width: 800px) {
+    .lr3{
+        display: flex;
+        flex-direction: column;
+    }
+    .r3{
+        margin-top: 10%;
+        /*width: 110%*/
+        
+    }
+    .lr4{
+        width: 140%;
+        margin-left: -20%;
+    }
+    .r5-2{
+        width: 80%;
+    }
+    .r5{
+        margin-top: -25%;
+        margin-bottom: 25%;
+    }
+    .foto-margin{
+        margin-left: -10%;
+        float: left;
+        display: block;
+        position: relative;
+        display: none;
+    }
+    .r8{
+        padding-left: 14%;
+        margin-top: -30%;
+    }
+    .two-column{
+        background-image: url("fot/back_mobile_1.png");
+    }
+    .two-column-3{
+        background-image: url("fot/back_mobile_2.png");
+    }
+    .two-column-5{
+        background-image: url("fot/back_mobile_3.png");
+    }
+    .two-column-8{
+        background-image: url("fot/back_mobile_4.png");
+    }
+    .pol-larger{
+        margin-top: -30%;
+    }
+    .pol-larger-1{
+        margin-top: 0%;
+    }
+    h1{
+        font-size: 6em;
+        margin-top: 10%;
+    }
+    nav{
+        margin-top: -6%;
+    }
+    .text-2{
+        margin-left: 0;
+    }
+
+    }
+    ol li{
+        font-family: Space Grotesk;
+    }
+    ol{
+        display: block;
+        text-align: center;
+        margin-left: 30%;
+        width: 40%;
+        padding-left: 0;
+    }
+    .h_mid{
+        padding-left: 0;
+        display: flex;
+        align-items: start;
+        margin-left: 30%;
+    }
+    .sluzby{
+        display: flex;
+        text-align: start;
+        color: #201414;
+    }
+
+    @media only screen and (max-width: 800px) {
+    .pokus{
+        padding-right: 40%;
+    }
+    nav{margin-left: 10%;}
+    }
+
+    </style>
+</head>
+<body>
+    <!-- background image 
+    <div class="image">
+        -->
+
+        <!-- navbar -->
+        <nav>
+            
+            <li><img class="logo" style="padding: 6%;" src="fot/logo.png"></li>
+            <li class="nav-item">
+                <div class="pokus"><span style="color: white; font-family: Space Grotesk; font-size: 1em;">Nezapomenutelné okamžiky s blahodárnými účinky</span></div>
+              </li>
+            
+          </nav>
+
+
+        
+<section class="two-column">
+    <div class="l1">
+        <img src="fot/one.png" alt="">
+    </div>
+
+    <div class="r1" style="display: block; text-align:left;">
+        
+        <h1 style="font-family: chillax semibold;">nobu<span class="dot">.</span></h1>
+        <p>Naše cestovní agentura působí na trhu již od roku 2007 a našim hlavním cílem je spokojenost klienta. Prioritou pro nás není kvantita prodaných zájezdů, ale hlavně kvalita poskytovaných služeb.</p>
+        <p class="last-p">Jednou z našich předností je individuální přístup k zákazníkovi, kterému se snažíme vycházet maximálně vstříc tím, že se soustředíme na jeho požadavky a&nbsp;speciální přání.</p>
+        <!-- button -->
+        <a class="button" href="#middle">Kontakty</a>
+        
+        
+    </div>
+</section>
+  
+
+<section class="two-column-2">
+    <div class="l2" style="display: block; text-align:left;">
+        <p class="text-2" style="color:#201414; padding-top: 0%;"><b style="font-size: 2em;">Zdravím,</b></p><p class="text-2" style="color:#201414;">já jsem majitelka cestovní agentury Nobu a miluju cestování podobně jako vy, proto vám mile ráda pomůžu vybrat ideální dovolenou pro vás.</p>
+        <p class="text-2" style="color:#201414;">Neváhejte mi kdykoliv zavolat na tel. číslo <b>777&nbsp;301&nbsp;273</b> a&nbsp;domluvíme se na společné schůzce, kde&nbsp;společně vybereme lokaci dle vašich představ.</p>
+        <p class="text-2" style="color:#201414;">Těším se na osobní setkání s vámi,<br><b>Ivona Riečičiarová, LL.M.</b></p>
+    </div>
+
+    <div class="r2">
+        <img src="fot/two.png" alt="">       
+    </div>
+</section>
+
+<!-- možnost 1-->
+<!--
+<section class="two-column-3">
+    <div><img style="margin-right: -80%; margin-top: 20%;" src="three.png"></div>
+    <div><img style="margin-top: 20%;" src="four.png"></div>
+    <div><img style="margin-left: -80%; margin-top: 20%;" src="five.png"></div>
+</section>
+-->
+
+<!-- možnost 2-->
+<!--
+<section class="two-column-3">
+    <div class="lr3"><img class="pol-larger-1" src="three.png">
+    <img  class="pol-larger" src="four.png">
+    <img  class="pol-larger" src="five.png">
+    </div>
+    
+</section>
+-->
+
+<!-- možnost 3-->
+<section class="two-column-3">
+
+    <div class="l3">
+        <img src="fot/three_.png" alt="">       
+    </div>
+
+    <div class="r3" style="display: block; text-align:left;">
+        <p style="color:white;"><b style="font-size: 2em;">O nás</b></p><p style="color:white;">Nejsme ti, kteří vám vaši dovolenou jen zajistí, ale především ti, kteří vám díky všem našim studijním pobytům a infocestám poradí a vyberou pro vás to nejlepší „přímo na míru“. Pobytové i poznávací zájezdy sami absolvujeme, abychom vám mohli nabídnout to nejlepší a poradit z vlastních zkušeností.</p>
+        <p style="color:white;">Svým klientům nabízíme zájezdy pouze renomovaných a pojištěných cestovních kanceláří, které prodáváme za stejné ceny a za stejných podmínek, jako cestovní kancelář, která daný zájezd pořádá. A to včetně veškerých slev a věrnostních bonusů.</p>
+        <p style="color:white;">Neorganizujeme vlastní zájezdy, cestovní smlouvu se zákazníky uzavíráme jménem příslušného pořadatele.</p>
+    </div>
+
+</section>
+
+
+<section class="two-column-2">
+    <div class="lr4" style="display: block; padding-top: 4%;">
+        <p class="h_mid"><b style="font-size: 2em; color:#201414;">Proč s námi?</b></p>
+        <ol>
+            <li style="text-align: left; margin-bottom: 3%;">Garantujeme vám stejnou cenu, za jakou zájezd prodává pořádající cestovní kancelář, a to včetně veškerých slev, akcí a věrnostních bonusů.</li>
+            <li style="text-align: left; margin-bottom: 3%;">Nabízíme zájezdy pouze od prověřených cestovních kanceláří, které jsou řádně pojištěny proti úpadku.</li>
+            <li style="text-align: left; margin-bottom: 3%;">Zakládáme si na individuálním přístupu ke každému klientovi.</li>
+            <li style="text-align: left; margin-bottom: 3%;">Vzhledem k tomu, že aktivně cestujeme, poradíme vám s výběrem dovolené.<br>Destinace a hotely, které nabízíme, známe z osobních zkušeností.</li>
+            <li style="text-align: left; margin-bottom: 3%;">Po obdržení vaší nezávazné objednávky (jak osobně, e-mailem nebo telefonicky) vám zašleme nabídku „na míru“ tak, aby vyhovovala vašim požadavkům.</li>
+            <li style="text-align: left; margin-bottom: 3%;">Zaplacením zájezdu pro nás starost o vaši dovolenou nekončí. Staráme se o vás i před odjezdem/odletem, předáme vám veškeré pokyny k odjezdu, v případě potřeby se vám budeme snažit vyjít vstříc i v průběhu vaší dovolené.</li>
+            <li style="text-align: left; margin-bottom: 3%;">Rádi vám vystavíme fakturu pro vašeho zaměstnavatele. Nejčastěji fakturujeme na FKSP atd.</li>
+            <li style="text-align: left; margin-bottom: 3%;">Chcete obdarovat svého blízkého dárkovým poukazem?<br>Vystavíme vám poukaz v hodnotě 1 000 Kč nebo třeba 100 000 Kč. Dotyčný si pak sám vybere, kam si přeje vycestovat.</li>
+            <li style="text-align: left; margin-bottom: 3%;">Vaše spokojenost je pro nás vždy na prvním místě!</li>
+        </ol>
+    </div>
+</section>
+
+
+
+<section class="two-column-5">
+
+    <div class="l2" style="display: block; text-align:left;">
+        
+        <p class="text-2" style="padding-top: 0%;"><b class="test" style="font-size: 2em;">Nabídka</b></p><p class="text-2">Nabízíme zájezdy od desítech různých cestovních kanceláří, mezi které patří například:</p><p style="padding: 0; margin: 0;">&nbsp;</p><p class="text-2">Čedok, Exim Tours, Fischer, Blue-style, CK Inex, Canaria Travel, Alexandria, Travel Family, České Kormidlo, Afrodita Travel, Brenna, Globtour, Nev-Dama, Atis, Valaška, Tipa Tour, Atlantika, ABC tours, Ancora, Mayer Crocus, Victoria, Vsacantour, CK Poznání a mnoho dalších.</p>
+        
+        
+    </div>
+
+    <div class="r5">
+        <img class="r5-2" style="margin-top: 2%;" src="fot/six.png">
+    </div>
+
+</section>
+
+
+  
+<section class="two-column-2">
+    
+    <div class="l2" style="display: block; text-align:left; padding-top: 3%; margin: 0;">
+        <p class="text-2" style="padding-top: 0%; color:#201414;"><b style="font-size: 2em;">Služby</b></p>
+        <p class="text-2" style="font-size: 1.2em; color:#201414;">POBYTOVÉ ZÁJEZDY</p>
+        <p class="text-2" style="color:#201414;">Nabízíme celoročně zájezdy do všech koutů světa, od Albánie po Zanzibar.</p>
+        <img style="margin: 0 0 0 25%;" class="foto-margin" src="fot/seven.png"> 
+    </div>
+
+    <div class="r3" style="display: block; text-align:left; padding-top: 3%; margin: 0;">
+        <p class="foto-margin" style="font-size: 2em;">&nbsp;</p>
+        <p style="color:#201414; font-size: 1.2em;">POZNÁVACÍ ZÁJEZDY</p>
+        <p style="color:#201414;">Toužíte po zážitcích? Poznávejte. Cestujte s průvodcem na Island nebo třeba na safari.</p>
+        <img style="padding-left: 15%;" class="foto-margin"  src="fot/eight.png"> 
+    </div>
+</section>
+
+<section class="two-column-2">
+    
+    <div class="l2" style="display: block; text-align:left; padding-top: 3%; margin: 0;">
+        <p class="foto-margin" style="font-size: 2em;">&nbsp;</p>
+        <p class="text-2" style="font-size: 1.2em; color:#201414;">EUROVÍKENDY</p>
+        <p class="text-2" style="color:#201414;">Máte volný víkend a nechcete být doma? Chcete vidět novou destinaci? O tom přesně jsou prodloužené víkendy s letenkami a ubytováním v jednom.</p>
+        <img style="margin: 0 0 0 25%;" class="foto-margin" src="fot/nine.png"> 
+    </div>
+
+    <div class="r3" style="display: block; text-align:left; padding-top: 3%; margin:0;">
+        <p class="foto-margin" style="font-size: 2em;">&nbsp;</p>
+        <p style="color:#201414; font-size: 1.2em;">POBYTY V ČR</p>
+        <p style="color:#201414;">Naše krásná země má hodně co nabídnout. Rádi vám doporučíme ubytování v domácím zázemí.</p>
+        <img style="padding-left: 15%;" class="foto-margin"  src="fot/ten.png"> 
+    </div>
+</section>
+
+
+<div id="middle"></div>
+<section class="two-column-8">
+
+    <div class="l2" style="display: block; text-align:left;">
+        <p class="text-2" style="padding-top: 7%;"><b style="font-size: 2em;">Kontakty</b></p>
+        <p class="text-2">Tel.: 777 301 273</p>
+        <p class="text-2">E-mail: canobu@seznam.cz</p>
+        <p class="text-2">Instagram: canobu_otrokovice</p>
+        <p class="text-2">IČ: 72408154</p>
+        <p class="text-2"> </p>
+        <p class="text-2" style="text-decoration: underline;"><a href="zasady_zpracovani.pdf">Zásady zpracování osobních údajů</a></p>
+        
+
+    </div>
+
+    <div class="r8" style="display: block; text-align:left; margin-left: -14%;">
+        <p class="text-2" style="padding-top: 7%;"><b style="font-size: 1.3em;">Otevírací doba</b></p>
+        <p class="text-2">Pondělí: 9.00–16.30</p>
+        <p class="text-2">Úterý: 9.00–16.30</p>
+        <p class="text-2">Středa: 9.00–16.30</p>
+        <p class="text-2">Čtvrtek: dle telefonické dohody</p>
+        <p class="text-2">Pátek: 9.00–16.30</p>
+        
+        
+    </div>
+
+    
+
+    <div>
+        
+    </div>
+
+</section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
